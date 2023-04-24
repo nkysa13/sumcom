@@ -78,11 +78,11 @@ ul {
     width: 7.16rem;
     height: 7.16rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     border-radius: 50%;
     background-image: linear-gradient(#4e21ca, rgba(36, 33, 202, 0));
     flex-direction: column; }
-    #Result #cricle div {
+    #Result #cricle #add {
       font-size: 3rem; }
   #Result p {
     padding-top: 2rem; }
