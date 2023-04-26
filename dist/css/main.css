@@ -1,9 +1,19 @@
+:root {
+  --bs-breakpoint-xs: 0;
+  --bs-breakpoint-sm:5in;
+  --bs-breakpoint-md: 6.8in;
+  --bs-breakpoint-lg: 8.8in;
+  --bs-breakpoint-xl: 10.7in;
+  --bs-breakpoint-xxl: 12.5in; }
+
 body {
   font-size: 18px; }
 
 .attribution {
   font-size: 11px;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  justify-content: center; }
   .attribution a {
     color: #3e52a3; }
 
@@ -12,15 +22,23 @@ body {
 
 .container {
   width: 36rem;
-  margin: 11.94rem 21.94rem 11.94rem 21.94rem; }
+  display: flex;
+  margin-top: 11.94rem;
+  margin-bottom: 11.94rem;
+  border-radius: 0 1rem 1rem 0;
+  box-shadow: 2rem 2rem 2rem rgba(128, 128, 128, 0.1); }
 
 .btn {
   display: flex;
   justify-content: center;
   width: auto;
-  margin: 0px 14px 0 24px;
+  margin: 1rem 14px 10px 24px;
   border-radius: 2rem;
-  --bs-btn-active-bg:hsla(256, 72%, 46%, 1); }
+  --bs-btn-active-bg:hsla(256, 72%, 46%, 1);
+  border: 0px;
+  height: 2.5rem; }
+  .btn .btn:active {
+    border: 0px; }
 
 ul {
   list-style-type: none;
@@ -61,8 +79,8 @@ ul {
 
 #summary {
   background-color: white;
-  box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.5);
-  border-radius: 1rem; }
+  border-radius: 0 1rem 1rem 0;
+  padding: 0; }
 
 #Result {
   color: #ebf1ff;
@@ -85,14 +103,23 @@ ul {
     #Result #cricle #add {
       font-size: 3rem; }
   #Result p {
-    padding-top: 2rem; }
+    padding: 2rem;
+    color: #ebf1ff; }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 5in) {
   .raw {
     height: auto; }
   .container {
     width: 100%;
-    margin: 0; }
+    margin: 0;
+    box-shadow: none; }
   .attribution {
     display: flex;
-    align-items: end; } }
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem; }
+  #summary {
+    background-color: white;
+    border-radius: 0px; }
+  #Result {
+    border-radius: 0 0 1rem 1rem; } }
