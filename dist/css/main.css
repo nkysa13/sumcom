@@ -47,8 +47,7 @@ ul {
   ul li {
     padding: 16px;
     margin: 0.83rem;
-    border-radius: 0.83rem;
-    box-shadow: 1px 1px 1px 1px #c8c7ff; }
+    border-radius: 15px; }
 
 .Li1-r {
   background-color: rgba(255, 87, 87, 0.1);
