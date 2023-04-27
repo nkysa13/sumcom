@@ -42,7 +42,7 @@ body {
 
 ul {
   list-style-type: none;
-  padding-left: 10px;
+  padding-left: 0;
   list-style-position: inside; }
   ul li {
     padding: 16px;
@@ -79,7 +79,9 @@ ul {
 #summary {
   background-color: white;
   border-radius: 0 1rem 1rem 0;
-  padding: 0; }
+  padding: 1rem; }
+  #summary h4 {
+    padding-left: 15px; }
 
 #Result {
   color: #ebf1ff;
